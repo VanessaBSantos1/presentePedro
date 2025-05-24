@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Feliz Aniversário Pedro 🎉</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Clique em mim!</h1>
+  <p>Se conseguir...🙃</p>
+
+  <!-- Botão que foge -->
+  <button id="tecla">Clique aqui!</button>
+  <div id="mensagem"><br></div>
+
+  <!-- Container do quiz, oculto no início -->
+  <div id="quiz-container" class="hidden">
+    <h2>Mini Quiz do Pedro 🤪</h2>
+    <div id="question-container"></div>
+    <div id="answer-buttons"></div>
+    <button id="next-btn" class="hidden">Próxima</button>
+  </div>
+
+  <!-- Tela final, ocultada no começo -->
+  <div id="final-screen" class="hidden">
+    <h1>🎉 FELIZ ANIVERSÁRIO, AMORZINHO! 🎉
+      Te amo! 💞
+    </h1>
+    <p>Você completou o quiz!</p>
+    <p id="score"></p>
+
+    <div id="slideshow">
+      <img src="assets/foto1.jpg" class="slide active" alt="Foto 1" />
+      <img src="assets/foto2.jpg" class="slide" alt="Foto 2" />
+      <img src="assets/foto3.jpg" class="slide" alt="Foto 3" />
+      <img src="assets/foto4.jpg" class="slide" alt="Foto 4" />
+      <img src="assets/foto5.jpg" class="slide" alt="Foto 5" />
+      <img src="assets/foto6.jpg" class="slide" alt="Foto 6" />
+    </div>
+
+    <audio id="musica" loop>
+      <source src="happy-birthday-334876.mp3" type="audio/mpeg" />
+    </audio>
+
+    <canvas id="confetti-canvas"></canvas>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
